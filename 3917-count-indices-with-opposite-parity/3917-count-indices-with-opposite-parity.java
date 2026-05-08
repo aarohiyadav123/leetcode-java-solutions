@@ -16,7 +16,8 @@ class Solution {
             }
         }
     }
-    return count;
+    return count; // o(n)tc
+    //o(n)2time
 }
     public int[] countOppositeParity(int[] nums) {
         int n = nums.length;
