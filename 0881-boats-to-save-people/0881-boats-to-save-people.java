@@ -1,22 +1,11 @@
-class Solution {
-    public int numRescueBoats(int[] people, int limit) {
-        int n = people.length;
-        int low =0;
-        int high = n-1;
-        Arrays.sort(people);
+Class Solution {
+    public int numRescueBoats(int[] people, ){
         int count =0;
-        while(low <= high){
-            if(people[low] + people[high] <= limit){
+        while(low < hegh){
+            if(People[low] + People[high] <=limit){
                 count++;
-                low++;
-                high--;
-                
-            }
-            else{ // greater
-                count++;
-                high--;
             }
         }
-        return count;
+
     }
 }
