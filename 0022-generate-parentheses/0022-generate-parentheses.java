@@ -1,15 +1,12 @@
 class Solution {
 public void helper(int n, String curr, int lc, int rc, List<String> ans){
-        //Base case
         if(curr.length() == 2*n){
            ans.add(curr);
            return;
        }
-        //pick left 
         if(lc < n){
             helper(n, curr+"(", lc+1, rc, ans);
         }
-        //pick right
         if(rc < lc){
            helper(n, curr+")", lc, rc+1, ans);
         }
