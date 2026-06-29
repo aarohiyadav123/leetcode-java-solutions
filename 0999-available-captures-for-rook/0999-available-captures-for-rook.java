@@ -1,7 +1,7 @@
 class Solution {
     public int count(char[][] board, int row, int col){
         int tc = 0;
-        
+        //for going up
         for(int i = row-1; i>=0; i--){
             if(board[i][col] == 'p'){
                 tc++;
@@ -9,6 +9,7 @@ class Solution {
             }
             else if(board[i][col] == 'B') break;
         }
+        //for going down
 
          for(int i = row+1; i<8; i++){
             if(board[i][col] == 'p'){
@@ -17,7 +18,7 @@ class Solution {
             }
             else if(board[i][col] == 'B') break;
         }
-
+       //for going right
         for(int i = col+1; i< 8; i++){
             if(board[row][i] == 'p'){
                 tc++;
@@ -25,7 +26,7 @@ class Solution {
             }
             else if(board[row][i] == 'B') break;
         }
-    
+      //for going legt
          for(int i = col-1; i>=0; i--){
             if(board[row][i] == 'p'){
                 tc++;
