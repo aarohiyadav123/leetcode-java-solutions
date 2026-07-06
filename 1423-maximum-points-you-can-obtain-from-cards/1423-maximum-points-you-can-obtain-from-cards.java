@@ -11,8 +11,8 @@ class Solution {
         }
         max = lsum;
         int rsum = 0;
-        int li = n -1;
-        for(int i = k-1; i>=0; i--){
+        int li = n-1;
+        for(int i= k-1; i>=0; i--){
             //shrik
             lsum = lsum - arr[i];
             rsum = rsum + arr[li];
